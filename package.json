@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An exploration of imageability in Urban Fabric",
   "main": "server.js",
+  "engines": {
+    "node": "v8.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"node server.js\" \"gulp compile\" "
