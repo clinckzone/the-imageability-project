@@ -2,7 +2,11 @@ var express = require("express");
 var server = express();
 
 server.set('view engine', "pug");
-server.set("PORT", process.env.port || 3000);
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 server.use(express.static(__dirname + "/css"));
 server.use(express.static(__dirname + "/images"));
@@ -182,7 +186,6 @@ server.get("/number-of-visits/organic", function(req,res) {
   });
 });
 
-
-server.listen(3000, function() {
-  console.log("Server is running on port 3000!");
+server.listen(port, function() {
+  console.log("Server is running on " +process.env.PORT);
 });
