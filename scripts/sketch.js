@@ -22,11 +22,11 @@ function setup() {
   slider = createSlider(0, 255, 0);
   mapType = document.getElementsByTagName("h3")[0].innerText;
 
-  if(mapType === "Rectangular") {
+  if(mapType === "Grid Iron") {
     translateX = 234; 
     translateY = 146;
   }
-  else if(mapType === "Radial") {
+  else if(mapType === "Ring Radial") {
     translateX = 369;
     translateY = 187;
   }
@@ -70,13 +70,13 @@ function draw() {
     temp = table.rows[1].arr[i]
     angle = -radians(temp);
 
-    if(mapType === "Rectangular") {
+    if(mapType === "Grid Iron") {
       v1 = table_1.getNum(i, 1);
       v2 = table_1.getNum(i, 2);
       v3 = table_1.getNum(i, 3);
       v4 = table_1.getNum(i, 4);
     }
-    else if(mapType === "Radial") {
+    else if(mapType === "Ring Radial") {
       v1 = table_1.getNum(i, 5);
       v2 = table_1.getNum(i, 6);
       v3 = table_1.getNum(i, 7);

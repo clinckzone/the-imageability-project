@@ -28,37 +28,37 @@ server.get("/average-duration", function(req, res) {
     name: "category.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Average Duration",
-    data_a: "./average-duration/rectangular",
-    data_b: "./average-duration/radial",
+    data_a: "./average-duration/grid-iron",
+    data_b: "./average-duration/ring-radial",
     data_c: "./average-duration/organic"
   })
 });
 
-server.get("/average-duration/rectangular", function(req,res) {
+server.get("/average-duration/grid-iron", function(req,res) {
   res.render("visualization", {
-    title: "Rectangular | Average Duration",
+    title: "Grid Iron | Average Duration",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Average Duration",
-    map_type: "Rectangular",
+    map_type: "Grid Iron",
     script_file: "../sketch.js",
-    points: "../points/rectangular.csv",
+    points: "../points/grid-iron.csv",
     type: "../type/duration.csv",
-    image: "../rectangular.jpg"
+    image: "../grid-iron.jpg"
   });
 });
 
-server.get("/average-duration/radial", function(req,res) {
+server.get("/average-duration/ring-radial", function(req,res) {
   res.render("visualization", {
-    title: "Radial | Average Duration",
+    title: "Ring Radial | Average Duration",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Average Duration",
-    map_type: "Radial",
+    map_type: "Ring Radial",
     script_file: "../sketch.js",
-    points: "../points/radial.csv",
+    points: "../points/ring-radial.csv",
     type: "../type/duration.csv",
-    image: "../radial.jpg"
+    image: "../ring-radial.jpg"
   });
 });
 
@@ -83,37 +83,37 @@ server.get("/number-of-fixations", function(req, res) {
     name: "category.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Fixations",
-    data_a: "./number-of-fixations/rectangular",
-    data_b: "./number-of-fixations/radial",
+    data_a: "./number-of-fixations/grid-iron",
+    data_b: "./number-of-fixations/ring-radial",
     data_c: "./number-of-fixations/organic"
   })
 });
 
-server.get("/number-of-fixations/rectangular", function(req,res) {
+server.get("/number-of-fixations/grid-iron", function(req,res) {
   res.render("visualization", {
-    title: "Rectangular | Number of Fixations",
+    title: "Grid Iron | Number of Fixations",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Fixations",
-    map_type: "Rectangular",
+    map_type: "Grid Iron",
     script_file: "../sketch.js",
-    points: "../points/rectangular.csv",
+    points: "../points/grid-iron.csv",
     type: "../type/fixations.csv",
-    image: "../rectangular.jpg",   
+    image: "../grid-iron.jpg",   
   });
 });
 
-server.get("/number-of-fixations/radial", function(req,res) {
+server.get("/number-of-fixations/ring-radial", function(req,res) {
   res.render("visualization", {
-    title: "Radial | Number of Fixations",
+    title: "Ring Radial | Number of Fixations",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Fixations",
-    map_type: "Radial",
+    map_type: "Ring Radial",
     script_file: "../sketch.js",
-    points: "../points/radial.csv",
+    points: "../points/ring-radial.csv",
     type: "../type/fixations.csv",
-    image: "../radial.jpg"
+    image: "../ring-radial.jpg"
   });
 });
 
@@ -138,37 +138,37 @@ server.get("/number-of-visits", function(req, res) {
     name: "category.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Visits",
-    data_a: "./number-of-visits/rectangular",
-    data_b: "./number-of-visits/radial",
+    data_a: "./number-of-visits/grid-iron",
+    data_b: "./number-of-visits/ring-radial",
     data_c: "./number-of-visits/organic"
   })
 });
 
-server.get("/number-of-visits/rectangular", function(req,res) {
+server.get("/number-of-visits/grid-iron", function(req,res) {
   res.render("visualization", {
-    title: "Rectangular | Number of Visits",
+    title: "Grid Iron | Number of Visits",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Visits",
-    map_type: "Rectangular",
+    map_type: "Grid Iron",
     script_file: "../sketch.js",
-    points: "../points/rectangular.csv",
+    points: "../points/grid-iron.csv",
     type: "../type/visits.csv",
-    image: "../rectangular.jpg"  
+    image: "../grid-iron.jpg"  
   });
 });
 
-server.get("/number-of-visits/radial", function(req,res) {
+server.get("/number-of-visits/ring-radial", function(req,res) {
   res.render("visualization", {
-    title: "Radial | Number of Visits",
+    title: "Ring Radial | Number of Visits",
     name:  "../visualization.css",
     topic: "Imageability in Urban Fabric",
     sub_topic: "Number of Visits",
-    map_type: "Radial",
+    map_type: "Ring Radial",
     script_file: "../sketch.js",
-    points: "../points/radial.csv",
+    points: "../points/ring-radial.csv",
     type: "../type/visits.csv",
-    image: "../radial.jpg"
+    image: "../ring-radial.jpg"
   });
 });
 
@@ -187,5 +187,5 @@ server.get("/number-of-visits/organic", function(req,res) {
 });
 
 server.listen(port, function() {
-  console.log("Server is running on " +process.env.PORT);
+  console.log("Server is running on " +port);
 });
