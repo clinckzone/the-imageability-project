@@ -1,2 +1,1 @@
-# the-imageability-project
-An exploration of Imageability in Urban Fabric. I worked with Prof. Saptarshi Kolay of my department, assisting him in data visualisation. In his research, he had collected three different types of eye-tracking data of several participants in three different urban planning patterns. It's for this data that I designed and developed a visualisation. On the side, I also learned how to use Tobii eye-tracking glasses to analyse eye-tracking data.
+
